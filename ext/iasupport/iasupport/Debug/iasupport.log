@@ -1,0 +1,24 @@
+﻿Build started 2/4/2011 1:23:11 PM.
+     1>Project "C:\projects\iaccessible\ext\iasupport\iasupport\iasupport.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Touching "Debug\iasupport.unsuccessfulbuild".
+       ClCompile:
+         All outputs are up-to-date.
+         All outputs are up-to-date.
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D IASUPPORT_EXPORTS /D _WINDLL /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MT /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"StdAfx.h" /Fp"Debug\iasupport.pch" /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt iasupport.cpp
+         iasupport.cpp
+       ManifestResourceCompile:
+         C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\iasupport.dll.embed.manifest.res" Debug\iasupport_manifest.rc 
+       Link:
+         C:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\projects\iaccessible\ext\iasupport\Debug\iasupport.dll" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\iasupport.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\projects\iaccessible\ext\iasupport\Debug\iasupport.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\projects\iaccessible\ext\iasupport\Debug\iasupport.lib" /MACHINE:X86 /DLL Debug\iasupport.dll.embed.manifest.res
+         Debug\dllmain.obj
+         Debug\iasupport.obj
+         Debug\stdafx.obj
+            Creating library C:\projects\iaccessible\ext\iasupport\Debug\iasupport.lib and object C:\projects\iaccessible\ext\iasupport\Debug\iasupport.exp
+     1>iasupport.obj : error LNK2019: unresolved external symbol "struct HINSTANCE__ * __cdecl getOleAccModule(void)" (?getOleAccModule@@YAPAUHINSTANCE__@@XZ) referenced in function _get_accChildCount
+     1>C:\projects\iaccessible\ext\iasupport\Debug\iasupport.dll : fatal error LNK1120: 1 unresolved externals
+     1>Done Building Project "C:\projects\iaccessible\ext\iasupport\iasupport\iasupport.vcxproj" (build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:00.39
