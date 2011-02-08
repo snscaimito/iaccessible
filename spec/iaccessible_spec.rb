@@ -18,10 +18,9 @@ describe "Iaccessible" do
       IAccessible.get_role_text(role_id, role_name_ptr, 255)
       role_name = role_name_ptr.read_string
 
-      puts "Child #{child} with name #{name} has role id #{role_id} which is #{role_name}"
+      accessible = IAccessible.is_accessible(hwnd, child)
 
-      puts "it is accessible" if (IAccessible.is_accessible(hwnd, child))
-
+      puts "Child #{child} with name #{name} has role id #{role_id} which is #{role_name}. Accessible = #{accessible}"
     end
   end
 end

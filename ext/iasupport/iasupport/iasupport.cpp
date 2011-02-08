@@ -86,7 +86,7 @@ __declspec( dllexport ) bool is_accessible(HWND control_hwnd, long childId) {
 	IAccessible *pAccessible ;
 
 	HRESULT hr = getAccessibleObjectFromWindow(control_hwnd, &pAccessible) ;
-	if (FAILED(hr)) return 0 ;
+	if (FAILED(hr)) return false ;
 
 	VARIANT varID ;
 	VariantInit(&varID) ;
